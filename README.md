@@ -15,7 +15,7 @@ This is a simple implementation of the Connect Four game with an AI opponent. Th
 
 ## Demo
 
-[Add a link to the live demo or screenshots of the game]
+https://connect-four-alpha-beta-pruning.vercel.app/
 
 ## Features
 
@@ -28,9 +28,10 @@ This is a simple implementation of the Connect Four game with an AI opponent. Th
 To get a copy of this project, you can clone the repository using the following command:
 
 ```bash
-git clone https://github.com/your-username/connect-four.git
+git clone https://github.com/Prathmesh-Kolekar/Connect_four_alpha_beta_pruning
+```
 How to Play
-Open the index.html file in your web browser.
+
 Start a new game by clicking on the "Start Game" button.
 Make your moves by clicking on the columns.
 The AI opponent will make its moves automatically.
