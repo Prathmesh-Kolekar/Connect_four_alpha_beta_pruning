@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect Four</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div id="start-screen" class="screen">
+    <h1>Connect Four</h1>
+    <p>Select Difficulty:</p>
+    <select id="difficulty-select">
+      <option value="3">Easy</option>
+      <option value="5" selected>Medium</option>
+      <option value="7">Hard</option>
+    </select>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div id="board" class="screen"></div>
+
+<script src="main.js"></script>
+</body>
+
+</html>

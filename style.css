@@ -1,0 +1,119 @@
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #282c34;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .screen {
+      text-align: center;
+    }
+    
+    #board {
+      display: none;
+      /* display: grid; */
+      /* position: absolute; */
+      grid-template-columns: repeat(7, 60px);
+      grid-template-rows: repeat(6, 60px);
+      gap: 5px;
+    }
+
+    .cell {
+      width: 60px;
+      height: 60px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .coin {
+      width: 50px;
+      height: 50px;
+      background-color: #e74c3c;
+      border-radius: 50%;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: slideDown 0.5s ease-out;
+    }
+
+    .red {
+      background-color: #e74c3c;
+    }
+
+    .yellow {
+      background-color: #f1c40f;
+    }
+
+    .winning-coin {
+      animation: none !important;
+    }
+
+    @keyframes slideDown {
+      to {
+        top: 0;
+      }
+    }
+
+    #start-screen {
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Set a max-width to prevent it from becoming too wide */
+  margin: auto; /* Center the element */
+}
+
+h1 {
+  color: #ecf0f1;
+}
+
+p {
+  margin: 10px 0;
+  color: #bdc3c7;
+}
+
+select, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+button {
+  background-color: #3498db;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+@media only screen and (max-width: 600px) {
+    .cell {
+      width: 30px;
+      height: 30px;
+      font-size: 14px;
+    }
+
+    #board{
+        grid-template-columns: repeat(7, 40px);
+        grid-template-rows: repeat(6, 40px);
+        gap: 0px;
+    }
+  }
